@@ -1,0 +1,13 @@
+{
+  "name": "Hello World",
+  "description": "Build an Extension!",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+  	"service_worker": "worker.js"
+  },
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "show.html"
+  }
+}

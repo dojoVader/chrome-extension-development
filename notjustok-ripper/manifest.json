@@ -1,0 +1,12 @@
+{
+  "name": "NotjustOk-ripper",
+  "description": "An experiment to see if NotJustOk songs can be ripped",
+  "version": "0.1",
+  "manifest_version": 3,
+  "icons":{
+    "16": "/assets/icon.png"
+  },
+  "background": {
+  	"service_worker": "background_worker.js"
+  }
+}
