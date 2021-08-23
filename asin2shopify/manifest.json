@@ -1,0 +1,13 @@
+{
+  "name": "Asin2Shopify",
+  "description": "Asin2Shopify is a Google Chrome extension that fetches ASIN Numbers and exports to Shopify CSV",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "background": {
+  	"service_worker": "worker.js"
+  },
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "index.html"
+  }
+}

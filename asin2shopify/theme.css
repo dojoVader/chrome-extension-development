@@ -1,0 +1,79 @@
+#base-ui {
+    padding: 0px;
+    width: 261px;
+}
+
+body,
+html {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Tahoma";
+}
+
+.title-pane,
+.custom-endpoint-pane {
+    font-size: 14px;
+    text-align: center;
+    color: #575561;
+    padding: 6%;
+    border-bottom: 1px solid #d8d8d8;
+    -webkit-font-smoothing: antialiased;
+}
+
+.custom-endpoint-pane {
+    padding: 6% 6% 12% 6%;
+}
+
+.title-pane {
+    color: #6e6b7b;
+}
+
+.custom-endpoint-pane input[type="text"] {
+    width: 97%;
+    height: 28px;
+    border: 1px solid #d8d8d8;
+    margin-top: 6px;
+    text-indent: 3%;
+}
+
+.text__left {
+    text-align: left;
+}
+
+input[type="text"]:active {
+    border: 1px solid #d8d8d8;
+}
+
+.font__bold {
+    font-weight: bold;
+}
+
+.bottom {
+    margin-bottom: 2%;
+}
+
+.left {
+    float: left
+}
+
+.right {
+    float: right;
+}
+
+.clearfix {
+    display: block;
+    clear: both;
+}
+
+.click-pane {
+    padding: 0%;
+    font-size: 15px;
+}
+
+.click-pane button {
+    height: 46px;
+    border: none;
+    width: 100%;
+    background: #9367EE;
+    color: white;
+}
