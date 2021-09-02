@@ -11,3 +11,11 @@ chrome.runtime.onInstalled.addListener(() => {
         configuration
     });
 });
+
+chrome.runtime.onMessage.addListener((request,sender,sendResponse) => {
+    switch(request.type){
+        case "notification":
+            chrome.notifications.create('',request.data);
+        break;    
+    }
+})

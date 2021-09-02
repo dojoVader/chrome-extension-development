@@ -17,9 +17,9 @@ function bindConfiguration(config) {
     const checkBoxElement = document.getElementById('enable_shopify_export');
     checkBoxElement.checked = config.configuration.enableShopifyExport
 
-    //Set the Url value to the text box
-    const inputElement = document.getElementById('custom_rest_endpoint');
-    inputElement.value = (config.configuration.customRestEndpoint ? config.configuration.customRestEndpoint : "")
+    // //Set the Url value to the text box
+    // const inputElement = document.getElementById('custom_rest_endpoint');
+    // inputElement.value = (config.configuration.customRestEndpoint ? config.configuration.customRestEndpoint : "")
 }
 
 function bindUIEvents() {

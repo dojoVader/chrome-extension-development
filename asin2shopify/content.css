@@ -1,0 +1,59 @@
+.amazon-button {
+    background: linear-gradient(rgb(254, 230, 176), rgb(238, 186, 55)) rgb(254, 230, 176);
+    inset: 0px;
+    cursor: pointer;
+    position: relative;
+    border-width: 1px;
+    border-style: solid;
+    border-image: initial;
+    border-color: rgb(190, 149, 44) rgb(166, 130, 38) rgb(155, 121, 36);
+    border-radius: 3px;
+    vertical-align: middle;
+    text-decoration: none;
+    overflow: hidden;
+    color: currentcolor;
+    transform: translate3d(0px, 0px, 0px);
+    padding: 2%;
+    width: 100%;
+    text-align: center;
+    flex-grow: 0;
+    flex-shrink: 0;
+    box-shadow: rgba(255, 255, 255, 0.6) 0px 1px 0px inset;
+    padding: 3%;
+    margin-bottom: 6%;
+}
+.amazon-button:active{
+    background: linear-gradient(rgb(254, 230, 176), rgb(201 148 15)) rgb(254, 230, 176);
+}
+div#side-shopifylist {
+    position: fixed;
+    width: 143px;
+    background: white;
+    height: 100vh;
+    border-right: 1px solid #bbbbbb;
+    text-align: center;
+}
+
+div#side-shopifylist h4{
+    font-weight: bold;
+    font-size: 13px;
+    padding: 9%
+}
+
+div#side-shopifylist #export-list{
+    padding: 12%;
+}
+
+img.shopify-export-item-image {
+    width: 81%;
+    display: block;
+    margin: 0 auto;
+}
+
+div.shopify-export-item:not(:last-child){
+    margin-bottom: 31%;
+}
+
+.download-pane {
+    padding: 12%;
+}
