@@ -24,15 +24,16 @@ const CSV_HEADER_ROW =['Body (HTML)','Image Src','Title', 'Type,Variant Price', 
     chrome.storage.local.get('asinproducts',(result) => {
         if('asinproducts' in result){
             mapOfProducts= result[STORAGE_SCHEMA];
-            console.log(mapOfProducts.data)
             renderExportList(mapOfProducts.data)
+        }else{
+            hideButton();
         }
     })
 
 
 
 
-    let amazonProductDom = document.getElementById(PRODUCT_PRICE_DOM);
+    let amazonProductDom = id(PRODUCT_PRICE_DOM);
     const parentDivOf = amazonProductDom.parentNode;
     console.log(amazonProductDom)
 
@@ -42,7 +43,7 @@ const CSV_HEADER_ROW =['Body (HTML)','Image Src','Title', 'Type,Variant Price', 
     parentDivOf.insertBefore(addToShopifybtn,amazonProductDom)
 
     //Create the sidebar to hold the list of shopify items
-    let amazonDpElement = document.getElementById("dp");
+    let amazonDpElement = id("dp");
     let partentOfDp = amazonDpElement.parentNode;
     let sidebarShopifyList = h('div',{id: 'side-shopifylist'},(dom) => {
         const h4Element  = h('h4',{},(d) => d.innerText= SHOPIFY_HEADER_TITLE)
@@ -75,31 +76,37 @@ function h(dom,attrib, cb){
 }
 
 function renderExportList(exportList){
-    //We need to get the parent node of the export list element
-    const parentNode = document.getElementById("export-list");
-    while(parentNode.firstChild){
-        parentNode.removeChild(parentNode.firstChild)
-    }
+      const parentNode = id("export-list");
+     while(parentNode.firstChild){
+           parentNode.removeChild(parentNode.firstChild)
+     }
     var tempDocumentFragment = document.createDocumentFragment();
     exportList.forEach( item => tempDocumentFragment.appendChild(addToSideBar(item,true)))
     parentNode.appendChild(tempDocumentFragment);
+}
+
+function clearList(){
+     const parentNode = id("export-list");
+     while(parentNode.firstChild){
+           parentNode.removeChild(parentNode.firstChild)
+     }
 }
 
 async function extractData(){
     let shopifyItem = {};
 
     // Extract the information from the DOM Page
-    shopifyItem['title'] = document.querySelector("#productTitle").innerText
+    shopifyItem['title'] = q("#productTitle").innerText
     const handle = SHOPIFY_HANDLE_EXPRESSION.exec(location.href)
     console.log(handle)
-    shopifyItem['body'] = document.getElementById("featurebullets_feature_div").innerHTML.replace(/\n||\s/gm,"");
+    shopifyItem['body'] = id("featurebullets_feature_div").innerHTML.replace(/\n||\s/gm,"");
     shopifyItem['vendor'] = ''
-    shopifyItem['type'] = document.querySelector("#wayfinding-breadcrumbs_feature_div li:last-child span a").innerText
+    shopifyItem['type'] = q("#wayfinding-breadcrumbs_feature_div li:last-child span a").innerText
     //price
-    let price = document.getElementById("price_inside_buybox").innerText.replace(MONEY_FORMAT,"")
+    let price = (id("price_inside_buybox") || id("priceblock_ourprice")).innerText.replace(MONEY_FORMAT,"")
     shopifyItem['variantPrice'] = price;
     //Get the image
-    let productImage = document.querySelector("#imgTagWrapperId img");
+    let productImage = q("#imgTagWrapperId img");
     shopifyItem['imgSrc'] = productImage.src;
     shopifyItem['altText'] = productImage.altText;
     shopifyItem['status'] = 'draft';
@@ -132,6 +139,20 @@ function downloadCsv(){
         dataArray.push([item.body, item.imgSrc, item.title, item.type, item.variantPrice, item.vendor || "N/A", 'FALSE', 'draft'])
     });
     exportToCsv('import_shopify.csv',dataArray)
+
+    chrome.storage.local.clear(e => {
+        clearList()
+        //Raise a notification bar to the worker
+        const data =  {
+             iconUrl: null,
+             title:"Shopify Import CSV",
+             message: "You can now import your product into Shopify",
+             type:'basic'
+         };
+        chrome.runtime.sendMessage(event('notification',data))
+        hideButton();
+
+    });
 
 }
 
@@ -170,9 +191,6 @@ function ShopifyCsv(item){
     return ShopifyCsvJsonSchemaMapping;
 }
 
-function getShopifyFields(){
-
-}
 
 //
 async function addToStorage(e){
@@ -204,6 +222,10 @@ function raiseNotification(item){
 
 //This allows us append to the Sidebar
 function addToSideBar(item, capture = false){
+    const buttonDiv = q("div.download-pane")
+    if(buttonDiv.style.display === 'none'){
+        showButton()
+    }
     // Ref to item
     const div = h('div',{class: 'shopify-export-item'})
     const a = h('a',{class:'shopify-export-item-anchor'})
@@ -212,7 +234,7 @@ function addToSideBar(item, capture = false){
     div.appendChild(a)
     // Let us add to the sidebar
     if(!capture){
-       document.getElementById("export-list").appendChild(div)     
+       id("export-list").appendChild(div)     
     }
     else{
         return div;
@@ -225,6 +247,23 @@ function event(type,data){
         type,
         data
     }
+}
+
+function hideButton(){
+    const buttonDiv = q("div.download-pane")
+    buttonDiv.style.display = 'none'
+}
+function showButton(){
+    const buttonDiv = q("div.download-pane")
+    buttonDiv.style.display ='block'
+}
+
+function id(id){
+    return document.getElementById(id);
+}
+
+function q(selector){
+    return document.querySelector(selector);
 }
 
 function exportToCsv(filename, rows) {

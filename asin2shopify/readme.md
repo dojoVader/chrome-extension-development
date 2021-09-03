@@ -1,6 +1,6 @@
 # ASIN2Shopify
 
-ASIN2Shopify is a Google Chrome Extension that exports an Amazon product based on the ASIN ( Amazon Standard International Number), the purpose of this tool is to allow users drop-ship products from Amazon to Shopify CSV
+ASIN2Shopify is a Google Chrome Extension, this is a mini project to explore exporting an Amazon product to the Shopify Platform with minimum ease, the goal of this project is to get acquainted with Chrome Development.
 
 
 
@@ -13,4 +13,10 @@ ASIN2Shopify is a Google Chrome Extension that exports an Amazon product based o
 ## Would like to have
 
 * Get Best Sellers and ASIN Number
-* Grid Table for ASIn Products for Better View
+* Editor to modify exportable items to Shopify
+* Implement sending products to 3rd party API
+
+## Screenhots
+![Screenshot 1](./screenshot/pix.png)
+![Screenshot 2](./screenshot/pix2.png)
+![Screenshot 3](./screenshot/pix3.png)
