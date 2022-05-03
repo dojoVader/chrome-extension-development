@@ -1,6 +1,6 @@
 # ASIN2Shopify
 
-ASIN2Shopify is a Google Chrome Extension, this is a mini project to explore exporting an Amazon product to the Shopify Platform with minimum ease, the goal of this project is to get acquainted with Chrome Development.
+ASIN2Shopify is a Google Chrome Extension, this is a mini project to explore exporting an Amazon product to the Shopify Platform with minimum ease, the goal of this project is to get acquainted with Chrome Extension Development.
 
 
 
