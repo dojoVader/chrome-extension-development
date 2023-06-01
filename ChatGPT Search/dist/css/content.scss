@@ -1,0 +1,21 @@
+#rcnt,#extabar,.chat-gpt-section{
+  &.hide{
+    display: none;
+  }
+}
+
+div#chat-gpt-div {
+  /* width: 1469px; */
+  margin: 2% 12%;
+  padding: 1%;
+  background: #f9f7f7;
+}
+
+.link-section {
+  padding-top: 3%;
+}
+
+#loading-status {
+  margin: 2% 12%;
+  padding: 0.5% 1% 2% 2%;
+}

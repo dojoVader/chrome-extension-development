@@ -1,0 +1,11 @@
+.inner-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4;
+    align-items: center;
+    padding-top: 22px;
+}
+
+.inner-container_icon {
+    font-size: 25px;
+}

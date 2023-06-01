@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="dfcbb306-c5de-44cf-8f64-95031d9930a0" name="Changes" comment="* Toggle Functionality now works 100%">
+      <change afterPath="$PROJECT_DIR$/icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/chat-gpt-result.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reducers/settingsReducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/content.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/content.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/content.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/content.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/content.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/content.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/options.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sidepane.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/search-switcher.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/background.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/background.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/configuration.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/configuration.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content_script.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/content_script.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/options.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/popup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/popup.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/loginReducer.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/rootReducers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/rootReducers.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/sidebarReducer.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/util.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack/webpack.common.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack/webpack.common.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="NamedScopeManager">
+    <scope name="File" pattern="file[chrome-test-extension]:public/*" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectId" id="2HqmLmBKnC7ZXq5KIW4w2eJVH9t" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "NewWatcherDialog.advanced.open": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/x64/Documents/chat-gpt-search/src",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_interpreter_path": "node",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/home/x64/Documents/chrome-test-extension/node_modules/prettier",
+    "settings.editor.selected.configurable": "settings.nodejs",
+    "ts.external.directory.path": "/home/x64/Documents/chat-gpt-search/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/dist" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components" />
+      <recent name="$PROJECT_DIR$/" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="watch" type="js.build_tools.npm" temporary="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="watch" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.watch" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dfcbb306-c5de-44cf-8f64-95031d9930a0" name="Changes" comment="" />
+      <created>1669020934138</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1669020934138</updated>
+      <workItem from="1669020936210" duration="2361000" />
+      <workItem from="1669028375698" duration="21051000" />
+      <workItem from="1669102162340" duration="23497000" />
+      <workItem from="1669217584543" duration="2169000" />
+      <workItem from="1669310601993" duration="11797000" />
+      <workItem from="1669529315076" duration="1697000" />
+      <workItem from="1669632329372" duration="1439000" />
+      <workItem from="1669929083686" duration="15219000" />
+      <workItem from="1669972127560" duration="9873000" />
+    </task>
+    <task id="LOCAL-00001" summary="* Added Configuration for BaseURL&#10;* Created Components for Data Record / Form &#10;* Converted to SCSS">
+      <created>1669111824096</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669111824096</updated>
+    </task>
+    <task id="LOCAL-00002" summary="* Added Context Menu to text Selection and images">
+      <created>1669135636972</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1669135636972</updated>
+    </task>
+    <task id="LOCAL-00003" summary="* Sync Text Information to API &#10;* Implemented the use Notification API to alert user of operation.">
+      <created>1669188348628</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1669188348628</updated>
+    </task>
+    <task id="LOCAL-00004" summary="* Text Selection and Image are now synced to the Server&#10;* Items are now synced to the Server">
+      <created>1669195838882</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1669195838882</updated>
+    </task>
+    <task id="LOCAL-00005" summary="* Added Bottom bar">
+      <created>1669201674188</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1669201674188</updated>
+    </task>
+    <task id="LOCAL-00006" summary="* Added Compiled CSS">
+      <created>1669242689352</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1669242689352</updated>
+    </task>
+    <task id="LOCAL-00007" summary="* Added React-redux to hold state for the Panel and login state">
+      <created>1669312906594</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1669312906594</updated>
+    </task>
+    <task id="LOCAL-00008" summary="* Created Reducers for Login and Sidebar Pane">
+      <created>1669316408198</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1669316408198</updated>
+    </task>
+    <task id="LOCAL-00009" summary="* Toggle Functionality now works 100%">
+      <created>1669320599224</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1669320599224</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="* Added Configuration for BaseURL&#10;* Created Components for Data Record / Form &#10;* Converted to SCSS" />
+    <MESSAGE value="* Added Context Menu to text Selection and images" />
+    <MESSAGE value="* Sync Text Information to API &#10;* Implemented the use Notification API to alert user of operation." />
+    <MESSAGE value="* Text Selection and Image are now synced to the Server&#10;* Items are now synced to the Server" />
+    <MESSAGE value="* Added Bottom bar" />
+    <MESSAGE value="* Added Compiled CSS" />
+    <MESSAGE value="* Added React-redux to hold state for the Panel and login state" />
+    <MESSAGE value="* Created Reducers for Login and Sidebar Pane" />
+    <MESSAGE value="* Toggle Functionality now works 100%" />
+    <option name="LAST_COMMIT_MESSAGE" value="* Toggle Functionality now works 100%" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
